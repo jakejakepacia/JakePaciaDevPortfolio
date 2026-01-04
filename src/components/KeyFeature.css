@@ -1,0 +1,19 @@
+.key-features {
+  padding: 0px;
+}
+
+.key-features h2 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+.key-features h5 {
+  margin-bottom: 4px;
+   text-align: left;
+}
+
+.key-features p{
+     text-align: left;
+     font-size: 14px;
+}

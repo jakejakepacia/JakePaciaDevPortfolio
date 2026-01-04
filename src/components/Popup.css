@@ -1,0 +1,69 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  width: 90%;              /* Responsive base width */
+  max-width: 800px;        /* Limits size on large screens */
+  max-height: 90vh;        /* Never taller than viewport */
+  border-radius: 10px;
+  z-index: 10;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;        /* Scroll if content is too tall */
+  box-sizing: border-box;  /* Includes padding in width/height */
+}
+
+.pop-up-body {
+  width: 100%;
+  max-height: calc(90vh - 80px); /* Adjusts for header/close button space */
+  display: flex;
+  margin-top: 10px;        /* Space below close button/header */
+  gap: 20px;
+}
+
+.pop-up-body video {
+  width: 100%;
+  height:100%;
+  object-fit: contain;     /* Keeps video aspect ratio without cropping */
+  background: white;       /* Nice background for letterboxed videos */
+}
+
+.close-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  float: right;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Optional: Extra tweaks for very small screens */
+@media (max-width: 600px) {
+  .popup {
+    width: 95%;
+    padding: 15px;
+  }
+  
+  .close-btn {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  
+  .pop-up-body {
+    height: 70vh;
+  }
+}

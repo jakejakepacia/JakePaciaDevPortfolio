@@ -1,0 +1,64 @@
+
+
+.video-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.ios-projects-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ios-projects-item{
+ width: 200px;
+  margin: 10px;
+}
+
+.ios-projects-item img{
+  width: 50px;
+  height: 50px;
+}
+
+.ios-projects-item p{
+  cursor: pointer;
+}
+
+
+/* Tab buttons area */
+.tabs-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Individual tab buttons */
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #f3f3f3;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.tab-btn:hover {
+  background: #e2e2e2;
+}
+
+/* Active tab styling */
+.tab-btn.active {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Tab content box */
+.tabs-content {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+

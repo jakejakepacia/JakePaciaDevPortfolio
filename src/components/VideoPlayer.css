@@ -1,0 +1,37 @@
+.video-wrapper {
+  position: relative;
+  width: 400px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.video {
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.play-button:hover {
+  background: rgba(0,0,0,0.7);
+}

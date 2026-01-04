@@ -1,0 +1,41 @@
+.page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* allow items to wrap on small screens */
+}
+
+.about-me {
+    display: flex;
+    flex: 0;
+}
+
+.about-me img {
+    width: 150px;
+    margin-right: 30px;
+    margin-bottom: 20px; /* spacing when stacked */
+}
+
+.roles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .about-me img {
+        margin-right: 10;
+    }
+
+
+    .role-description {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

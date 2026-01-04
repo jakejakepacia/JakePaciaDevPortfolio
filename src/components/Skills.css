@@ -1,0 +1,6 @@
+.frontend-skills{
+    display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;           
+  gap: 20px;  
+}

@@ -2,12 +2,32 @@
 import "./Skills.css";
 import { useRef, useState } from "react";
 import tonelLogo from "../assets/tonel-logo.png"
-
+import swiftIcon from "../assets/swift-icon.png"
+import reactIcon from "../assets/react-icon.png"
+import csharpIcon from "../assets/c-sharp.png"
 
 function Skills(){
       const [activeTab, setActiveTab] = useState("tab1");
       const [showPopup, setShowPopup] = useState(false);
     
+      const skills = [
+        {
+          id: 1,
+          name: "React",
+          icon: reactIcon
+        },
+        {
+          id: 2,
+          name: "Swift",
+          icon: swiftIcon
+        },
+        {
+          id: 3,
+          name: "C#",
+          icon: csharpIcon
+        }
+      ]
+
 return(
   <div className="container">
     <p><strong>Skills</strong></p>
@@ -40,20 +60,12 @@ return(
       <div className="tabs-content">
         {activeTab === "tab1" && 
           <div className="frontend-skills">
-            <div className="frontend-item">
-                <img src={tonelLogo} />
-                <p>Swift</p>
-            </div>
-
-             <div className="frontend-item">
-                <img src={tonelLogo} />
-                <p>Swift</p>
-            </div>
-
-             <div className="frontend-item">
-                <img src={tonelLogo} />
-                <p>Swift</p>
-            </div>
+            {skills.map((skill) => (
+              <div className="frontend-item">
+                <img src={skill.icon} />
+                <p>{skill.name}</p>
+               </div>
+          ))} 
           </div>
         }
         {activeTab === "tab2" && <div> </div>

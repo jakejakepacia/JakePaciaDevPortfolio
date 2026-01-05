@@ -57,7 +57,7 @@ const [selectedProject, setSelectedProject] = useState(null);
 
     return(
         <div className="container">
-            <p>Projects</p>
+            <p><strong>Projects</strong></p>
             {/* <div className="project-items" >
                 <div className="project-item" onClick={() => setShowPopup(true)}>
                   <img src={tonelLogo} />

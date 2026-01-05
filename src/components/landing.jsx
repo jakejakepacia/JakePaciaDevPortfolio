@@ -38,7 +38,7 @@ function Landing(){
         <div>
             <div>
              <div  className="roles">
-                <p>CURRENTLY <br /><strong>Sole iOS Developer</strong> <br /> August 2024 - PRESENT </p>
+                <p><strong>CURRENTLY <br />Sole iOS Developer</strong> <br /> August 2024 - PRESENT </p>
                 <p><strong>UnlimitedIA</strong> <br />US Based Company</p>
             </div>
                <p className="description-p">
@@ -49,7 +49,7 @@ function Landing(){
   
 
             <p onClick={() => setShowRoles(!showPrevRoles)}
-                style={{cursor: "pointer"}}>Previous roles</p>
+                style={{cursor: "pointer"}}><strong>Previous Roles</strong></p>
 
                 {showPrevRoles && (
             <div  className="previous-roles">

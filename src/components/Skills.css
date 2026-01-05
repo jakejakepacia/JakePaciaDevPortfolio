@@ -4,3 +4,24 @@
   flex-wrap: wrap;           
   gap: 20px;  
 }
+
+.frontend-item {
+  background-color: transparent;
+  border: 1px solid #555;
+  border-radius: 8px;
+  align-items: center;
+  width: 100px;
+  cursor: pointer;
+}
+
+.frontend-item img{
+    display: block;
+  margin: 0 auto;
+  max-width: 30%;            /* responsive image */
+  height: 30%;
+  margin-top: 10px;
+}
+
+.frontend-item p{
+  text-align: center;
+}

@@ -8,9 +8,12 @@
     flex-wrap: wrap; /* allow items to wrap on small screens */
 }
 
+.logo img{
+   height: 100px;
+}
+
 .logo{
-      font-size: 30px; /* slightly larger than 12px for readability */
-  line-height: 1.5;
+    align-items: center;
 }
 
 .scheduleCall {
